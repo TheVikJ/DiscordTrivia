@@ -28,7 +28,7 @@ async def on_message(message):
 
   if message.content.startswith('!trivia'):
     trivia = GetRandomTrivia()
-    msg = trivia['question'] + "\n" + str(trivia['answers']) + "\n" + "[React with 1, 2, 3 or 4]" 
+    msg = trivia['question'] + "\n" + str(trivia['answers']) + "\n" + "[Paste the right answer]" 
     await message.channel.send(msg)
 
   if message.content.startswith('!answer'):
